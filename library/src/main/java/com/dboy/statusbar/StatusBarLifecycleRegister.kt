@@ -25,7 +25,7 @@ class StatusBarLifecycleRegister : Application.ActivityLifecycleCallbacks {
     }
 
     override fun onActivityDestroyed(activity: Activity) {
-        ChangeColorAnim.cancelAnim()
+        ChangeColorAnim.cancelAnim(activity)
     }
 
     override fun onActivitySaveInstanceState(activity: Activity, outState: Bundle) {

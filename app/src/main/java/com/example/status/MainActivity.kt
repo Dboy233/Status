@@ -14,13 +14,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        supportFragmentManager.beginTransaction().add(R.id.fragment_container, TestFragment1())
+        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, TestFragment1())
             .commit()
     }
 
     fun changeFragment(view: View) {
         if (changeF) {
-            supportFragmentManager.beginTransaction().add(R.id.fragment_container, TestFragment1())
+            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, TestFragment1())
                 .commit()
             changeF = false
         } else {
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun changeActivity(view: View) {
-        startActivity(Intent(this, MainActivity2::class.java))
+        startActivity(Intent(applicationContext, MainActivity2::class.java))
     }
 
 

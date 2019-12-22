@@ -11,6 +11,9 @@ import androidx.annotation.ColorInt
  * 颜色渐变过度动画
  */
 object ColorAnimUtils {
+
+
+
     /**
      * @param startColor 开始的颜色
      * @param fromColor 要变成的颜色

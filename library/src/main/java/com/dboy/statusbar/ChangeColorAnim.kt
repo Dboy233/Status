@@ -8,23 +8,40 @@ import com.jaeger.library.StatusBarUtil
 
 object ChangeColorAnim {
     var CURRENT_COLOR = 0
-    var colorAnim: ValueAnimator? = null
 
+    val animList: HashMap<String, ValueAnimator> = HashMap()
 
     fun change(activity: Activity, @ColorInt color: Int, alpha: Int, duration: Long) {
-        cancelAnim()
-        colorAnim = ColorAnimUtils.toAnim(CURRENT_COLOR, color, duration) {
-            CURRENT_COLOR = it
-            StatusBarUtil.setColor(activity, it, alpha)
-        }.apply {
-            start()
+        val key = activity.localClassName
+        if (animList.containsKey(key)) {
+            animList[key]?.apply {
+                removeAllUpdateListeners()
+                removeAllListeners()
+                cancel()
+            }
         }
+        Log.d("DJC", "加载动画 $key")
+        animList[key] =
+            ColorAnimUtils.toAnim(CURRENT_COLOR, color, duration) {
+                CURRENT_COLOR = it
+                StatusBarUtil.setColor(activity, it, alpha)
+            }.apply {
+                start()
+            }
     }
 
-    fun cancelAnim() {
-//        Log.d("DJC","取消动画")
-        colorAnim?.removeAllUpdateListeners()
-        colorAnim?.removeAllListeners()
-        colorAnim?.cancel()
+    fun cancelAnim(activity: Activity) {
+        val key = activity.localClassName
+        if (animList.containsKey(key)) {
+            Log.d("DJC", "取消动画 $key")
+            animList[key]?.apply {
+                removeAllUpdateListeners()
+                removeAllListeners()
+                cancel()
+            }
+            animList.remove(key)
+        }
+
+
     }
 }

@@ -6,6 +6,8 @@ import androidx.core.view.LayoutInflaterCompat
 
 object StatusBarLibrary {
 
+
+
     fun inject(activity: Activity) {
         val inflater: LayoutInflater?
         inflater = activity.layoutInflater
