@@ -15,10 +15,11 @@
         android:textColor="#fff"
         android:textSize="24sp"
         android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:statusBar_SameColorAsIt="true" />
+        app:statusBar_alpha="10"
+        app:statusBar_SameColorAsIt="with_Anim"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

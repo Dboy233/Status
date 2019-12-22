@@ -11,20 +11,6 @@ class StatusBarLifecycleRegister : Application.ActivityLifecycleCallbacks {
     override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {
         Log.d("DJC","onActivityCreated")
         StatusBarLibrary.inject(activity)
-//        val obtainStyledAttributes = activity.obtainStyledAttributes(R.styleable.status_color)
-//        val color = obtainStyledAttributes.getColor(R.styleable.status_color_statusBar_color, 0)
-//        if (color == 0) {
-//            Log.d("DJC", "00000")
-//        } else {
-//            Log.d("DJC","颜色 $color")
-//        }
-//        obtainStyledAttributes?.let {
-//         Log.d("DJC","不为空")
-//
-//        }
-//
-//
-//        obtainStyledAttributes.recycle()
     }
 
     override fun onActivityResumed(activity: Activity) {
@@ -39,6 +25,7 @@ class StatusBarLifecycleRegister : Application.ActivityLifecycleCallbacks {
     }
 
     override fun onActivityDestroyed(activity: Activity) {
+        ChangeColorAnim.cancelAnim()
     }
 
     override fun onActivitySaveInstanceState(activity: Activity, outState: Bundle) {

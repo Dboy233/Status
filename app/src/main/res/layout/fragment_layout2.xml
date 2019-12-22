@@ -10,15 +10,18 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="#08140C"
+        android:background="#9E7FCF"
         android:gravity="center"
-        android:text="我是fragment2 色号#08140C"
+        android:text="我是fragment2 色号#9E7FCF"
         android:textColor="#fff"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:ellipsize="end"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:statusBar_SameColorAsIt="true" />
+        app:statusBar_alpha="100"
+        app:statusBar_SameColorAsIt="with_Anim"
+        app:statusBar_anim_duration="1000"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

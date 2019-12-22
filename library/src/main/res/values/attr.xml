@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="status_color">
-        <attr name="statusBar_SameColorAsIt" format="boolean" />
+        <attr name="statusBar_SameColorAsIt" format="enum">
+            <enum name="with_Anim" value="0" />
+            <enum name="No_Anim" value="1" />
+        </attr>
+        <attr name="statusBar_alpha" format="integer" />
+        <attr name="statusBar_anim_duration" format="integer" />
     </declare-styleable>
 
 </resources>
