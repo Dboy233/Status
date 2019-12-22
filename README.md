@@ -35,5 +35,10 @@ This effect
 
 ![image1](imgs/imggif.gif)
 
+```
+dependencies {
+	        implementation 'com.github.Dboy233:XmlStatusBarUtils:1.0'
+}
 
+```
 
