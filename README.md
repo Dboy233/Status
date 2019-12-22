@@ -37,7 +37,9 @@ This effect
 
 ```
 dependencies {
-	        implementation 'com.github.Dboy233:XmlStatusBarUtils:1.0'
+
+  	 implementation 'com.github.Dboy233:XmlStatusBarUtils:1.0'
+		
 }
 
 ```
