@@ -1,4 +1,4 @@
-# XmlStatusBarUtils
+# XmlStatusBarUtils [![](https://jitpack.io/v/Dboy233/XmlStatusBarUtils.svg)](https://jitpack.io/#Dboy233/XmlStatusBarUtils)
 ## Automatically change the status bar color
 
 ## 自动修改状态栏颜色
