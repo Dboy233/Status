@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="status_color">
+        <attr name="statusBar_SameColorAsIt" format="boolean" />
+    </declare-styleable>
+
+</resources>

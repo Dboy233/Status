@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dboy.statusbar">
+
+
+    <application>
+        <provider
+            android:name="com.dboy.statusbar.StatusBarContentProvider"
+            android:authorities="com.dboy.statusbar.StatusBarContentProvider"
+            android:exported="false"
+            android:multiprocess="true"/>
+    </application>
+
+</manifest>
