@@ -17,7 +17,7 @@
 #### Available in fragment and activity
 
 ```xml
-----2.0----
+----2.1----
 	app:statusBar_SameColorAsIt="with_Anim" or "No_Anim" //改变状态栏时需不需要渐变动画
 	app:statusBar_alpha="100" //透明度
 	app:statusBar_anim_duration="1000"//颜色渐变动画时间
@@ -49,7 +49,7 @@ This effect
 ```
 dependencies {
 
-  	 implementation 'com.github.Dboy233:XmlStatusBarUtils:1.0'
+  	 implementation 'com.github.Dboy233:XmlStatusBarUtils:2.1'
 		
 }
 
