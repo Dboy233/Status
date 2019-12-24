@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportFragmentManager.beginTransaction().replace(R.id.fragment_container, TestFragment1())
             .commit()
-        ColorAnimUtils
     }
 
     fun changeFragment(view: View) {
