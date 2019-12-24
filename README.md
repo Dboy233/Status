@@ -17,13 +17,13 @@
 #### Available in fragment and activity
 
 ```xml
-----2.0----
+----version 2.1----
 	app:statusBar_SameColorAsIt="with_Anim" or "No_Anim" //改变状态栏时需不需要渐变动画
 	app:statusBar_alpha="100" //透明度
 	app:statusBar_anim_duration="1000"//颜色渐变动画时间
 
 	tools:ignore="MissingPrefix"//忽略前缀app警告
----1.0-----
+---version 1.0-----
 	app:statusBar_SameColorAsIt="true" or "false" //true和false效果一样
 	
 ```
@@ -49,7 +49,7 @@ This effect
 ```
 dependencies {
 
-  	 implementation 'com.github.Dboy233:XmlStatusBarUtils:1.0'
+  	 implementation 'com.github.Dboy233:XmlStatusBarUtils:2.1'
 		
 }
 
