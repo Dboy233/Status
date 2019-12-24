@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.dboy.statusbar.ColorAnimUtils
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportFragmentManager.beginTransaction().replace(R.id.fragment_container, TestFragment1())
             .commit()
+        ColorAnimUtils
     }
 
     fun changeFragment(view: View) {
