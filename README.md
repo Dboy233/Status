@@ -16,6 +16,15 @@
 #### You just need to indicate in the XML file that you want the status bar to have the same color tag as it does
 #### Available in fragment and activity
 
+```xml
+	app:statusBar_SameColorAsIt="with_Anim" or "No_Anim" //改变状态栏时需不需要渐变动画
+	app:statusBar_alpha="100" //透明度
+	app:statusBar_anim_duration="1000"//颜色渐变动画时间
+
+	tools:ignore="MissingPrefix"//忽略前缀app警告
+	
+```
+
 ------
 
 Use like this
