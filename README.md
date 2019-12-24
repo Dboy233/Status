@@ -36,7 +36,7 @@ Use like this
 
 必须要设置背景色
 
-![image1](imgs/image1.png)
+![img2](imgs/img2.png)
 
 ------
 
